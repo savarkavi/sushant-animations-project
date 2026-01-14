@@ -4,6 +4,7 @@ export default function Home() {
   return (
     <div className="flex flex-col gap-2 items-center justify-center h-screen">
       <Link href="/navigation-menu-1">Navigation menu 1</Link>
+      <Link href="/image-reveal-on-hover">Image reveal on hover</Link>
     </div>
   );
 }
