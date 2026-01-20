@@ -8,16 +8,16 @@ import Image from "next/image";
 
 const data = [
   {
-    src: "https://res.cloudinary.com/dcsv0xhjz/image/upload/v1768797276/landing-page-reveal-1/landing-page-animation-img1_auztt3.webp",
+    src: "https://res.cloudinary.com/dcsv0xhjz/image/upload/v1768797276/sushant-animations-project/landing-page-reveal-1/landing-page-animation-img1_auztt3.webp",
   },
   {
-    src: "https://res.cloudinary.com/dcsv0xhjz/image/upload/v1768797276/landing-page-reveal-1/landing-page-animation-img2_ygxlbw.webp",
+    src: "https://res.cloudinary.com/dcsv0xhjz/image/upload/v1768797276/sushant-animations-project/landing-page-reveal-1/landing-page-animation-img2_ygxlbw.webp",
   },
   {
-    src: "https://res.cloudinary.com/dcsv0xhjz/image/upload/v1768797275/landing-page-reveal-1/landing-page-animation-img3_c52ydn.webp",
+    src: "https://res.cloudinary.com/dcsv0xhjz/image/upload/v1768797275/sushant-animations-project/landing-page-reveal-1/landing-page-animation-img3_c52ydn.webp",
   },
   {
-    src: "https://res.cloudinary.com/dcsv0xhjz/image/upload/v1768797275/landing-page-reveal-1/landing-page-animation-img4_tjxy0i.webp",
+    src: "https://res.cloudinary.com/dcsv0xhjz/image/upload/v1768797275/sushant-animations-project/landing-page-reveal-1/landing-page-animation-img4_tjxy0i.webp",
   },
 ];
 
