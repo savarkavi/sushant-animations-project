@@ -62,14 +62,11 @@ const ImagesContainer = () => {
     <div className="image-container min-screen mx-auto flex w-full flex-col items-center overflow-hidden pt-10 pb-30">
       <h1 className="text-center text-9xl font-bold">日本の驚くべき東京物語</h1>
       <div className="relative mt-40 flex flex-wrap justify-center gap-6">
-        <h1 className="absolute top-[55%] left-1/2 max-w-[400px] -translate-1/2 text-center text-6xl font-bold text-red-500">
+        <h1 className="absolute top-[55%] left-1/2 max-w-100 -translate-1/2 text-center text-6xl font-bold text-red-500">
           日本の驚くべき東京物語
         </h1>
         {data.map((item, i) => (
-          <div
-            key={i}
-            className="image-card relative h-[500px] w-[800px] rounded-xl"
-          >
+          <div key={i} className="image-card relative h-125 w-200 rounded-xl">
             <Image
               src={item.img}
               alt="img"
@@ -78,7 +75,7 @@ const ImagesContainer = () => {
             />
           </div>
         ))}
-        <p className="absolute bottom-8 left-1/2 max-w-[800px] -translate-x-1/2 text-center text-gray-400">
+        <p className="absolute bottom-8 left-1/2 max-w-200 -translate-x-1/2 text-center text-gray-400">
           東京の1980年代は、きらめくネオンと静かな情緒が同時に息づいていた時代だった。渋谷の交差点にはカセットテープの音楽が流れ、人々は少し未来を信じながら、少しだけ不安を胸に歩いていた。新宿の高層ビル群は夜空に溶け込み、窓の灯り一つ一つが誰かの物語のように瞬いていた。路地裏の喫茶店では、コーヒーの香りとともにゆっくりと時間が流れ、若者たちは夢や恋や仕事について語り合っていた。経済の勢いと人間らしい温もりが同居する東京は、どこか懐かしく、どこか切ない美しさを持っていた。
         </p>
       </div>

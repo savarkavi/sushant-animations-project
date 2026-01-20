@@ -74,7 +74,7 @@ const Overlay = () => {
               onMouseEnter={() => handleItemHover(i)}
               onMouseLeave={() => handleItemLeave(i)}
             >
-              <div className="menu-item relative w-fit translate-y-[120px]">
+              <div className="menu-item relative w-fit translate-y-30">
                 <p
                   className="text-top text-9xl uppercase"
                   style={{ willChange: "transform" }}

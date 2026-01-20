@@ -66,7 +66,7 @@ const ContentContainer = () => {
 
   return (
     <div className="relative flex h-full w-full flex-col justify-between pt-36">
-      <div className="absolute top-1/2 left-1/2 h-[700px] w-[1000px] -translate-1/2 rounded-xl">
+      <div className="absolute top-1/2 left-1/2 h-175 w-250 -translate-1/2 rounded-xl">
         {data.map((item, i) => (
           <div
             key={item.name}
@@ -88,7 +88,7 @@ const ContentContainer = () => {
         </p>
         <Image src="/arrow.png" alt="arrow svg" width={100} height={100} />
       </div>
-      <div className="z-99 flex w-[900px] flex-wrap items-center gap-4 py-10 text-black">
+      <div className="z-99 flex w-225 flex-wrap items-center gap-4 py-10 text-black">
         {data.map((item, i) => (
           <div
             onMouseEnter={() => handleItemHover(i)}
