@@ -52,7 +52,7 @@ const ContentContainer = () => {
           .to(`.item-image-${i}`, {
             clipPath: "polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)",
           })
-          .to(`.underline-${i}`, { width: 0 }, "<")
+          .to(`.underline-${i}`, { width: 0 }, "<"),
       );
     });
   });
@@ -65,19 +65,19 @@ const ContentContainer = () => {
   };
 
   return (
-    <div className="w-full h-full relative flex flex-col justify-between pt-36">
+    <div className="relative flex h-full w-full flex-col justify-between pt-36">
       <div className="absolute top-1/2 left-1/2 h-[700px] w-[1000px] -translate-1/2 rounded-xl">
         {data.map((item, i) => (
           <div
             key={item.name}
             style={{ clipPath: "polygon(50% 50%, 50% 50%, 50% 50%, 50% 50%)" }}
-            className={`item-image-${i} w-full h-full absolute top-0 left-0 rounded-xl`}
+            className={`item-image-${i} absolute top-0 left-0 h-full w-full rounded-xl`}
           >
             <Image
               src={item.url}
               alt="image"
               fill
-              className="object-cover rounded-xl"
+              className="rounded-xl object-cover"
             />
           </div>
         ))}

@@ -1,0 +1,24 @@
+# Dependencies
+node_modules
+
+# Build outputs
+.next
+out
+build
+dist
+
+# Cache
+.cache
+
+# Logs
+*.log
+
+# Lock files
+package-lock.json
+yarn.lock
+bun.lock
+
+# Environment files
+.env
+.env.local
+.env.*.local

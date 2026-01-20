@@ -93,16 +93,16 @@ const Intro = () => {
   return (
     <div
       style={{ clipPath: "polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)" }}
-      className="intro-container flex items-center justify-center h-screen w-full bg-black absolute top-0 left-0 z-10"
+      className="intro-container absolute top-0 left-0 z-10 flex h-screen w-full items-center justify-center bg-black"
     >
-      <div className="center-container w-100 h-125 relative">
+      <div className="center-container relative h-125 w-100">
         {data.map((item, i) => (
           <div
             style={{
               clipPath: "polygon(0% 100%, 100% 100%, 100% 100%, 0% 100%)",
             }}
             key={i}
-            className="image-container absolute top-0 left-0 w-full h-full"
+            className="image-container absolute top-0 left-0 h-full w-full"
           >
             <Image
               src={item.src}
@@ -113,7 +113,7 @@ const Intro = () => {
           </div>
         ))}
         <h1
-          className={`title opacity-0 absolute bottom-0 translate-y-1/2 left-1/2 -translate-x-1/2 scale-y-180 overflow-hidden text-7xl text-nowrap text-white uppercase mix-blend-difference ${unicalAntiqua.className}`}
+          className={`title absolute bottom-0 left-1/2 -translate-x-1/2 translate-y-1/2 scale-y-180 overflow-hidden text-7xl text-nowrap text-white uppercase opacity-0 mix-blend-difference ${unicalAntiqua.className}`}
         >
           Astrid Stella
         </h1>

@@ -35,7 +35,7 @@ const Overlay = () => {
         i,
         gsap
           .timeline({ paused: true })
-          .to(item, { translateY: -120, duration: 0.3 })
+          .to(item, { translateY: -120, duration: 0.3 }),
       );
     });
   });
@@ -58,11 +58,11 @@ const Overlay = () => {
     <>
       <div
         style={{ clipPath: "polygon(0% 0%, 100% 0%, 100% 0%, 0% 0%)" }}
-        className="overlay fixed bg-[#c5fb45] top-0 left-0 w-full h-screen z-10 text-black"
+        className="overlay fixed top-0 left-0 z-10 h-screen w-full bg-[#c5fb45] text-black"
       >
         <button
           onClick={handleOverlayClose}
-          className="absolute top-6 right-6 uppercase text-2xl cursor-pointer"
+          className="absolute top-6 right-6 cursor-pointer text-2xl uppercase"
         >
           Close
         </button>
@@ -70,7 +70,7 @@ const Overlay = () => {
           {items.map((item, i) => (
             <div
               key={item.id}
-              className="w-fit cursor-pointer h-32 overflow-hidden"
+              className="h-32 w-fit cursor-pointer overflow-hidden"
               onMouseEnter={() => handleItemHover(i)}
               onMouseLeave={() => handleItemLeave(i)}
             >
@@ -86,7 +86,7 @@ const Overlay = () => {
             </div>
           ))}
         </div>
-        <div className="flex items-end justify-between text-xl font-semibold uppercase px-16">
+        <div className="flex items-end justify-between px-16 text-xl font-semibold uppercase">
           <p>Sushant production</p>
           <div className="flex flex-col gap-2">
             <p className="cursor-pointer">Instagram ↗</p>
@@ -97,7 +97,7 @@ const Overlay = () => {
       </div>
       <button
         onClick={handleOverlayOpen}
-        className="absolute top-6 right-6 uppercase text-2xl cursor-pointer"
+        className="absolute top-6 right-6 cursor-pointer text-2xl uppercase"
       >
         Menu
       </button>

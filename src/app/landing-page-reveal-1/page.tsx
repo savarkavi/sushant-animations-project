@@ -3,9 +3,9 @@ import Intro from "./intro";
 
 const Page = () => {
   return (
-    <div className="h-screen bg-white flex justify-center items-center w-full">
+    <div className="flex h-screen w-full items-center justify-center bg-white">
       <Intro />
-      <div className="h-screen w-full relative">
+      <div className="relative h-screen w-full">
         <Image
           src="https://res.cloudinary.com/dcsv0xhjz/image/upload/v1768807343/landing-page-reveal-1/home-image_rgiokf.webp"
           alt="img"

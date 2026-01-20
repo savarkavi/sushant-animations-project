@@ -1,6 +1,6 @@
 const Header = () => {
   return (
-    <div className="flex items-center justify-between text-xl font-bold uppercase text-black">
+    <div className="flex items-center justify-between text-xl font-bold text-black uppercase">
       <p>Sushant Studios</p>
       <div className="flex items-center gap-6">
         <p className="cursor-pointer">Home</p>

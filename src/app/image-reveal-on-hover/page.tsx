@@ -5,7 +5,7 @@ import ContentContainer from "./content-container";
 
 const Page = () => {
   return (
-    <div className={cn("p-8 bg-white h-screen", cormorant.className)}>
+    <div className={cn("h-screen bg-white p-8", cormorant.className)}>
       <Header />
       <ContentContainer />
     </div>
