@@ -1,4 +1,8 @@
-import { Cormorant_Garamond, Uncial_Antiqua } from "next/font/google";
+import {
+  Alfa_Slab_One,
+  Cormorant_Garamond,
+  Uncial_Antiqua,
+} from "next/font/google";
 
 export const cormorant = Cormorant_Garamond({
   subsets: ["latin"],
@@ -6,6 +10,11 @@ export const cormorant = Cormorant_Garamond({
 });
 
 export const unicalAntiqua = Uncial_Antiqua({
+  subsets: ["latin"],
+  weight: ["400"],
+});
+
+export const alfaSlabOne = Alfa_Slab_One({
   subsets: ["latin"],
   weight: ["400"],
 });
