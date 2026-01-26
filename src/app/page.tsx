@@ -10,6 +10,7 @@ export default function Home() {
       <Link href="/scroll-trigger-2">Scroll trigger 2</Link>
       <Link href="/navbar-scroll-trigger">Navbar scroll trigger</Link>
       <Link href="/infinite-image-slider">Infinite image slider</Link>
+      <Link href="/navigation-menu-2">Navigation menu 2</Link>
     </div>
   );
 }
