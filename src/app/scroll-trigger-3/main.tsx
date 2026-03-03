@@ -75,15 +75,21 @@ const Main = () => {
       indexContainer.current!.offsetHeight -
       96;
 
-    gsap.timeline({
-      scrollTrigger: {
-        trigger: ".main-container",
-        start: "top 80px",
-        end: `+=${endScrollDistance}`,
-        pin: true,
-        pinSpacing: false,
-      },
-    });
+    gsap
+      .timeline({
+        scrollTrigger: {
+          trigger: ".main-container",
+          start: "top 80px",
+          end: `+=${endScrollDistance}`,
+          pin: true,
+          scrub: 1,
+          pinSpacing: false,
+        },
+      })
+      .to(".index-container", {
+        y: indexTravelDistance,
+        ease: "none",
+      });
 
     images.forEach((item, i) => {
       gsap
@@ -102,17 +108,6 @@ const Main = () => {
           },
         })
         .to(items[i], { y: -itemScrollDistance });
-    });
-
-    gsap.to(".index-container", {
-      y: indexTravelDistance,
-      ease: "none",
-      scrollTrigger: {
-        trigger: ".main-container",
-        start: "top 80px",
-        end: `+=${endScrollDistance}`,
-        scrub: 1,
-      },
     });
   });
 
