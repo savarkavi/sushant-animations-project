@@ -12,6 +12,7 @@ export default function Home() {
       <Link href="/infinite-image-slider">Infinite image slider</Link>
       <Link href="/navigation-menu-2">Navigation menu 2</Link>
       <Link href="/scroll-trigger-3">Scroll trigger 3</Link>
+      <Link href="/landing-page-loader">Landing page reveal 2</Link>
     </div>
   );
 }
