@@ -4,6 +4,7 @@ import {
   Uncial_Antiqua,
   Gasoek_One,
   Cinzel,
+  Merriweather,
 } from "next/font/google";
 
 export const cormorant = Cormorant_Garamond({
@@ -29,4 +30,9 @@ export const gasoekOne = Gasoek_One({
 export const cinzel = Cinzel({
   subsets: ["latin"],
   weight: ["400", "500", "600", "700"],
+});
+
+export const merriweather = Merriweather({
+  subsets: ["latin"],
+  weight: ["300", "400", "500", "600", "700", "800"],
 });
